@@ -68,10 +68,6 @@ export default function AuthPanel({
       <div className="auth-copy">
         <p className="eyebrow">Download Access</p>
         <h2>Create an account or log in.</h2>
-        <p className="hero-copy">
-          Recruiters can filter products freely, but image downloads are available
-          only after signing in.
-        </p>
       </div>
 
       <div className="auth-card">

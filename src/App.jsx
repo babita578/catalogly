@@ -51,10 +51,6 @@ export default function App() {
             <span>Visible Items</span>
             <strong>{filteredProducts.length.toLocaleString()}</strong>
           </div>
-          <div>
-            <span>Rendering</span>
-            <strong>{isPending ? "Deferred" : "Stable"}</strong>
-          </div>
         </div>
       </section>
 
