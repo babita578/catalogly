@@ -1,18 +1,8 @@
 # Catalogly
 
-Catalogly is a React 18 product discovery app that renders a large catalog with 10,000 items, image cards, filtering, account-based download access, and library-based virtualization.
+Catalogly is a product discovery experience for browsing a large merchandise catalog, narrowing results quickly, and downloading product imagery through account access.
 
-## Features
-
-- React 18 app with `createRoot`
-- Concurrent UI updates with `useTransition`
-- Deferred filtering with `useDeferredValue`
-- Lazy-loaded sort panel with `Suspense`
-- Virtualized product grid with `react-window`
-- Responsive auto-sizing with `react-virtualized`
-- Account creation and login flow stored locally for demo purposes
-- Click any product image to download it after login
-- Responsive UI for desktop and mobile
+It is designed as a polished showcase application with a fast browsing experience across desktop, tablet, and mobile.
 
 ## Run Locally
 
@@ -21,31 +11,18 @@ npm install
 npm run dev
 ```
 
-## Build
+## Production Build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Deploy Publicly
+## Deploy
 
-This app is ready to publish on Vercel.
+Catalogly can be deployed easily on Vercel using the default Vite settings:
 
-1. Push the project to a GitHub repository.
-2. Import that repository into Vercel.
-3. Framework preset: `Vite`
-4. Build command: `npm run build`
-5. Output directory: `dist`
-
-The included [vercel.json](/Users/babitasahu/Documents/Playground/vercel.json) keeps the app working correctly as a single-page application after deployment.
-
-## Project Structure
-
-- `src/App.jsx`: page composition and feature wiring
-- `src/components/AuthPanel.jsx`: login and account creation UI
-- `src/components/ProductCard.jsx`: product card and download interaction
-- `src/components/VirtualizedGrid.jsx`: virtualized grid rendering
-- `src/hooks/useLocalAuth.js`: local auth/session logic
-- `src/hooks/useProductCatalog.js`: product fetch, filter, and sort logic
-- `src/styles.css`: full UI styling
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Use `npm run build` as the build command.
+4. Use `dist` as the output directory.
